@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background-color: #f0f0d6;
+  background-color: #ffffcc;
   display: flex;
   flex-direction: column;
   font-family: 'Zilla Slab', serif;
@@ -51,15 +51,32 @@ h1 {
   padding-bottom: 20px;
 }
 
-.navButton {
+.nav {
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+
+.nav-link {
   margin: 0 5px 0 5px;
   border-radius: 0;
   font-size: 18px;
   background-color: rgba(206, 177, 128, 1);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  color: #000;
 }
 
-.navButton:hover {
+.nav-pills .nav-link.active {
+  background-color: rgba(206, 177, 128, 0.8);
+  box-shadow: none;
+  color: #000;
+}
+
+.nav-link:hover {
   background-color: rgba(206, 177, 128, 0.5);
 }
 
@@ -71,11 +88,6 @@ h1 {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.nav-buttons-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .about-me-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -85,6 +97,19 @@ h1 {
 .fa-info-circle {
   color: #ceb180;
   font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.fa-address-card {
+  color: #ceb180;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.fa-black-tie {
+  color: #ceb180;
+  font-size: 50px;
+  padding-bottom: 10px;
 }
 
 .technologies-wrapper {
@@ -102,17 +127,29 @@ h1 {
   text-align: center;
 }
 
+.portfolio-text {
+  text-align: center;
+}
+
+.resume-text {
+  text-align: center;
+}
+
 .tools-wrapper {
   display: flex;
   justify-content: center;
 }
 
+.tool-wrapper {
+  padding: 0 20px 0 20px;
+}
+
 .technologies-wrapper-p {
+  padding-bottom: 20px;
 }
 
 .tools-i {
   font-size: 90px;
-  padding: 0 20px 0 20px;
 }
 
 .fa-js {
@@ -133,6 +170,50 @@ h1 {
 
 .fa-bootstrap {
   color: #5e3e8b
+}
+
+.time-pieces {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.time-piece{
+  background-color: rgba(255, 236, 139, 1);
+  margin: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 15px 15px 15px 20px;
+}
+
+.span-n-div {
+  display: flex;
+  align-items: center;
+}
+
+.time-piece-span {
+  width: 25px;
+  text-align: center;
+}
+
+.time-piece-p {
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+.time-piece-i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.time-piece-a {
+  color: black;
+}
+
+.time-piece-a:hover {
+  color: black;
 }
 
 .footer {
@@ -163,5 +244,15 @@ h1 {
   color: #0074b2;
 }
 
-.footer-wrapper-p {
+.resume-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffcc;
+}
+
+.portfolio-wrapper
+ {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffcc;
 }
