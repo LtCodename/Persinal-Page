@@ -1,2 +1,2 @@
-# Persinal-Page
+# Personal-Page
 Page about me
