@@ -68,6 +68,7 @@ h1 {
   background-color: rgba(206, 177, 128, 1);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   color: #000;
+  transition: background-color .4s linear, box-shadow .4s linear;
 }
 
 .nav-pills .nav-link.active {
@@ -76,14 +77,16 @@ h1 {
   color: #000;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
   background-color: rgba(206, 177, 128, 0.5);
+  color: #000;
 }
 
 .avatar {
-  border: 5px solid #f2d984;
+  border: 5px solid #ceb180;
   border-radius: 50%;
   width: 200px;
+  max-width: 100%;
   background-color: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -94,28 +97,14 @@ h1 {
   background-color: #ffffcc;
 }
 
-.fa-info-circle {
-  color: #ceb180;
-  font-size: 50px;
-  padding-bottom: 10px;
-}
-
-.fa-address-card {
-  color: #ceb180;
-  font-size: 50px;
-  padding-bottom: 10px;
-}
-
-.fa-black-tie {
-  color: #ceb180;
-  font-size: 50px;
-  padding-bottom: 10px;
+.section-icon {
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 .technologies-wrapper {
   display: flex;
   background-color: #f0f0d6;
-  display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -125,14 +114,62 @@ h1 {
 
 .about-me-text {
   text-align: center;
+  padding: 0 15px;
 }
 
 .portfolio-text {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .resume-text {
   text-align: center;
+}
+
+.portfolio-piece {
+  background-color: rgba(255, 236, 139, 1);
+  margin: 15px 5px 5px 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 15px 15px 15px 20px;
+  min-width: 250px;
+  width: 75%;
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.portfolio-h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-p-bottom {
+  font-size: 20px;
+}
+
+.portfolio-i {
+  height: 27px;
+  margin-right: 5px;
+}
+
+.portfolio-a {
+  display: flex;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.portfolio-a:hover, .portfolio-a:focus {
+  color: #000000;
 }
 
 .tools-wrapper {
@@ -149,27 +186,7 @@ h1 {
 }
 
 .tools-i {
-  font-size: 90px;
-}
-
-.fa-js {
-  color: #f8dc3d;
-}
-
-.fa-html5 {
-  color: #f34e2d;
-}
-
-.fa-css3-alt {
-  color: #1e5fa9;
-}
-
-.fa-react {
-  color: #01d2f4;
-}
-
-.fa-bootstrap {
-  color: #5e3e8b
+  height: 90px;
 }
 
 .time-pieces {
@@ -186,6 +203,7 @@ h1 {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   text-align: left;
   padding: 15px 15px 15px 20px;
+  min-width: 250px;
 }
 
 .span-n-div {
@@ -206,13 +224,14 @@ h1 {
 .time-piece-i {
   margin-right: 5px;
   font-size: 20px;
+  height: 20px;
 }
 
 .time-piece-a {
   color: black;
 }
 
-.time-piece-a:hover {
+.time-piece-a:hover, .time-piece-a:focus {
   color: black;
 }
 
@@ -229,19 +248,25 @@ h1 {
   flex-direction: column;
 }
 
-.contacts-a {
-  color: black;
-  font-size: 50px;
+.contacts {
   margin: 0 auto;
-  padding: 0 5px 0 5px;
 }
 
-.fa-envelope-square {
-  color: #ceb180;
+.contacts-a {
+  outline: none;
+  margin: 0 5px;
+  float: left;
+  transition: opacity 0.4s linear;
+  cursor: pointer;
 }
 
-.fa-linkedin {
-  color: #0074b2;
+.contacts-a:hover,
+.contacts-a:focus {
+  opacity: .7;
+}
+
+.contacts-a img {
+  height: 50px;
 }
 
 .resume-wrapper {
@@ -250,9 +275,45 @@ h1 {
   background-color: #ffffcc;
 }
 
-.portfolio-wrapper
- {
+.portfolio-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #ffffcc;
+}
+
+@media (max-width: 850px) {
+  .h1-name {
+    font-size: 30px;
+  }
+
+  .h2-position {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tools-p {
+    display: none;
+  }
+
+  .tool-wrapper {
+    padding: 0 10px 0 10px;
+  }
+
+  .portfolio-links {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .tools-i {
+    height: 60px;
+  }
+}
+
+@media (max-width: 330px) {
+  .nav-link {
+    font-size: 15px;
+    padding: 0.5rem;
+  }
 }
