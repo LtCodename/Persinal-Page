@@ -178,11 +178,12 @@ h1 {
 }
 
 .tool-wrapper {
-  padding: 0 20px 0 20px;
+  padding: 0 15px 0 15px;
 }
 
 .technologies-wrapper-p {
   padding-bottom: 20px;
+  padding: 0 15px;
 }
 
 .tools-i {
@@ -281,6 +282,16 @@ h1 {
   background-color: #ffffcc;
 }
 
+@media (max-width: 875px) {
+  .tools-p {
+    display: none;
+  }
+
+  .tool-wrapper {
+    padding: 0 10px 0 10px;
+  }
+}
+
 @media (max-width: 850px) {
   .h1-name {
     font-size: 30px;
@@ -292,26 +303,40 @@ h1 {
 }
 
 @media (max-width: 650px) {
-  .tools-p {
-    display: none;
-  }
-
-  .tool-wrapper {
-    padding: 0 10px 0 10px;
-  }
-
   .portfolio-links {
     display: block;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .tools-i {
     height: 60px;
   }
+
+  .tool-wrapper {
+    padding: 0 5px 0 5px;
+  }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 450px) {
+  .tools-i {
+    height: 50px;
+  }
+
+  .tool-wrapper {
+    padding: 0 2.5px 0 2.5px;
+  }
+}
+
+@media (max-width: 340px) {
+  .tools-i {
+    height: 40px;
+  }
+
+  .tool-wrapper {
+    padding: 0 1.5px 0 1.5px;
+  }
+
   .nav-link {
     font-size: 15px;
     padding: 0.5rem;
