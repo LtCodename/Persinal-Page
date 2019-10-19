@@ -194,7 +194,6 @@ h1 {
 }
 
 .technologies-wrapper-p {
-  padding-bottom: 10px;
   padding: 0 15px;
 }
 
@@ -294,7 +293,7 @@ h1 {
   background-color: #ffffcc;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 1030px) {
   .tools-p {
     display: none;
   }
@@ -320,7 +319,7 @@ h1 {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   .tools-i {
     height: 60px;
   }
@@ -330,7 +329,7 @@ h1 {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .tools-i {
     height: 50px;
   }
@@ -340,7 +339,7 @@ h1 {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 390px) {
   .tools-i {
     height: 40px;
   }
