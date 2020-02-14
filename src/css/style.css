@@ -183,7 +183,6 @@ h1 {
 
 .portfolio-a {
   display: flex;
-  margin-top: 10px;
   color: #000000;
 }
 
@@ -299,6 +298,11 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ffffcc;
+}
+
+.start-using {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1030px) {
